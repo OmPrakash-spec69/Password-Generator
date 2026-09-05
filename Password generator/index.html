@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Generator</title>
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="box">
+    <h2>Password Generator</h2>
+
+
+    <div class="output-row">
+      <input type="text" id="passBox" readonly placeholder="Password" />
+      <button id="copyBtn" type="button">Copy</button>
+    </div>
+
+   
+    <div class="slider-row">
+      <label for="lengthSlider">Length: <span id="lenVal">16</span></label>
+      <input type="range" id="lengthSlider" min="4" max="32" value="16" />
+    </div>
+
+   
+    <div class="options">
+      <label><input type="checkbox" id="upper" checked /> Uppercase (A-Z)</label>
+      <label><input type="checkbox" id="lower" checked /> Lowercase (a-z)</label>
+      <label><input type="checkbox" id="numbers" checked /> Numbers (0-9)</label>
+      <label><input type="checkbox" id="symbols" checked /> Symbols (!@#$)</label>
+    </div>
+
+    
+    <button id="genBtn" type="button">Generate Password</button>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
